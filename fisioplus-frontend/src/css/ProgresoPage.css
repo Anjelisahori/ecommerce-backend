@@ -1,0 +1,256 @@
+.progreso-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formulario-progreso {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.opciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.opciones h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.opcion {
+  padding: 10px 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.opcion:hover {
+  background-color: #e0f7fa;
+}
+
+.opcion.activa {
+  background-color: #00bfa5;
+  color: white;
+  border-color: #00bfa5;
+}
+
+.avance-label {
+  text-align: center;
+  font-weight: bold;
+}
+
+.avance-label input,
+input[type="number"] {
+  margin-left: 10px;
+  width: 70px;
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.submit-progreso,
+button.submit-button {
+  align-self: center;
+  padding: 10px 25px;
+  background: #00796b;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.submit-progreso:hover,
+button.submit-button:hover {
+  background: #004d40;
+}
+
+.lista-progresos {
+  margin-top: 3rem;
+}
+
+.lista-progresos h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.progreso-item {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  color: #2c3e50;
+}
+
+.barra-externa {
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 25px;
+  margin-top: 0.5rem;
+}
+
+.barra-interna {
+  background: #4caf50;
+  height: 100%;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 25px;
+  transition: width 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  .opciones {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+/* ProgresoPage.css */
+
+.progreso-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 100px auto 50px auto; /* espacio con navbar */
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-progreso {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.opciones h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #16243b;
+  text-align: center;
+}
+
+.opciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.opcion {
+  padding: 12px 20px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.opcion:hover {
+  background-color: #e0f7fa;
+}
+
+.opcion.activa {
+  background-color: #00bfa5;
+  color: white;
+  border-color: #00bfa5;
+  font-weight: bold;
+}
+
+.avance-label {
+  text-align: center;
+  font-weight: bold;
+}
+
+.submit-progreso {
+  align-self: center;
+  padding: 12px 30px;
+  background: #00796b;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.submit-progreso:hover {
+  background: #004d40;
+}
+
+.lista-progresos {
+  margin-top: 3rem;
+}
+
+.lista-progresos h3 {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: #16243b;
+}
+
+.progreso-item {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.barra-externa {
+  background: #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 26px;
+  margin-top: 0.5rem;
+}
+
+.barra-interna {
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  height: 100%;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  transition: width 0.4s ease-in-out;
+  border-radius: 12px 0 0 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .opciones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .opcion {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .submit-progreso {
+    width: 100%;
+  }
+}
