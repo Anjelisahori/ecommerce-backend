@@ -4,11 +4,23 @@ require('dotenv').config();
 
 const app = express();
 
-// =============================================
-// MIDDLEWARES
-// =============================================
+// 1. Define todos los orígenes permitidos en un array
+const allowedOrigins = [
+  // La URL temporal de Vercel que da el error
+  'https://ecommerce-frontend-eta-sepia-88.vercel.app',
+
+  // Tu dominio local para desarrollo
+  'http://localhost:3000',
+];
+
+// 2. Filtra los valores nulos o indefinidos (por si FRONTEND_URL no está definido)
+const finalOrigins = allowedOrigins.filter(Boolean);
+
+
+// 3. Aplica la configuración de CORS
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  // Asigna el array de orígenes
+  origin: finalOrigins,
   credentials: true
 }));
 
