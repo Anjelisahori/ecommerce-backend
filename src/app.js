@@ -6,6 +6,9 @@ const app = express();
 
 // 1. Define todos los orígenes permitidos en un array
 const allowedOrigins = [
+
+  'https://ecommerce-frontend-63uv.vercel.app',
+  
   // La URL temporal de Vercel que da el error
   'https://www.vickari.site',
 
