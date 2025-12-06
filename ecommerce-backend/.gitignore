@@ -1,0 +1,161 @@
+# =============================================
+# DEPENDENCIES
+# =============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-debug.log*
+
+# =============================================
+# ENVIRONMENT VARIABLES
+# =============================================
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env*.local
+
+# =============================================
+# LOGS
+# =============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# =============================================
+# TESTING
+# =============================================
+coverage/
+.nyc_output/
+*.lcov
+.grunt/
+lib-cov/
+
+# =============================================
+# BUILD & DIST
+# =============================================
+dist/
+build/
+.cache/
+*.tsbuildinfo
+
+# =============================================
+# IDE & EDITORS
+# =============================================
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+*.launch
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# =============================================
+# OPERATING SYSTEMS
+# =============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+.nfs*
+
+# =============================================
+# TEMPORARY FILES
+# =============================================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.history/
+
+# =============================================
+# DATABASE
+# =============================================
+*.sqlite
+*.sqlite3
+*.db
+*.sql.backup
+dump.sql
+
+# =============================================
+# SECURITY & SENSITIVE DATA
+# =============================================
+*.pem
+*.key
+*.cert
+*.crt
+config/secrets.js
+secrets/
+
+# =============================================
+# MISC
+# =============================================
+.eslintcache
+.npm
+.yarn-integrity
+.pnp.*
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
