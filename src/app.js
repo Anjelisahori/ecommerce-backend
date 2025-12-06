@@ -7,7 +7,7 @@ const app = express();
 // 1. Define todos los orígenes permitidos en un array
 const allowedOrigins = [
   // La URL temporal de Vercel que da el error
-  'https://ecommerce-frontend-eta-sepia-88.vercel.app',
+  'https://www.vickari.site',
 
   // Tu dominio local para desarrollo
   'http://localhost:3000',
